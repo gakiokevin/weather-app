@@ -16,7 +16,7 @@ temp,city;
       cityInput= document.getElementById('cityInput')
       cityInput = cityInput.value
       if(cityInput.trim()!==""){
-       const WEATHERURL = `http://api.weatherapi.com/v1/current.json?key=15ff0e78d5fa4aa8b27121057231206&q=${cityInput}&aqi=no`
+       const WEATHERURL = `https://api.weatherapi.com/v1/current.json?key=15ff0e78d5fa4aa8b27121057231206&q=${cityInput}&aqi=no`
        try{
             let response =  await fetch(WEATHERURL,{mode:"cors"})
             let weatherResponse = await response.json()
